@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: solid 1px blue;
+            padding: 1rem;
+        }
+        body {
+            background: rgb(211, 241, 245);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        section {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-style: italic;
+        }
+    </style>
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>FORMULARIO DE REGISTRO</h1>
+    <form>
+        <section>
+            <label for="Name">Nombre</label>
+            <input type="text" id="Name">
+        </section>
+        <section>
+            <label for="Lastname">Apellido</label>
+            <input type="text" id="Lastname">
+        </section>
+        <section>
+            <label>Sexo:</label>
+            <div>
+              <input type="radio" id="Male" name="Sex" value="Male" />
+              <label for="Male">Hombre</label>
+        
+              <input type="radio" id="Female" name="Sex" value="Female" />
+              <label for="Female">Mujer</label>
+            </div>
+        </section>
+        <section>
+            <label for="Email">Correo</label>
+            <input type="email" id="Email">
+        </section>
+        <section>
+            <input type="checkbox" name="Newsletter" id="Newsletter" checked>
+            <label for="Newsletter">Deseo recibir información sobre novedades y ofertas</label>
+        </section>
+        <section>
+            <input type="checkbox" name="Conditions" id="Conditions" required>
+            <label for="Conditions">Declaro haber leído y aceptar las condiciones generales</label>
+        </section>
+        <button>Enviar</button>
+    </form>
+    <p><a href="/index.html">Volver a la Biblioteca</a></p>
+</body>
+</html>
